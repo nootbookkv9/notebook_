@@ -43,6 +43,9 @@
 
 ###############################################################
 # We also have --> git pull
+	# You have to undo last commits
+		$ git pull origin main
+	# You have also learn about --> git fetch
 	
 ###############################################################
 
