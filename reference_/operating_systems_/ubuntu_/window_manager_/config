@@ -1,0 +1,229 @@
+# Mod key
+set $mod Mod4
+
+font pango:monospace 12
+
+# kill focused window
+bindsym $mod+c kill
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+# start firefox
+bindsym $mod+b exec firefox
+
+# start dmenu (a program launcher)
+bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+
+# change focus
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+
+# split in horizontal orientation
+bindsym $mod+v split h
+# split in vertical orientation
+bindsym $mod+shift+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Workspace_ -----------------------------------------------------------------------------------------------------------------------
+bindsym $mod+u				workspace Work_1
+bindsym $mod+i				workspace Work_2
+bindsym $mod+o				workspace Work_3
+bindsym $mod+p				workspace Work_4
+bindsym $mod+shift+u		workspace Work_5
+bindsym $mod+shift+i		workspace Work_6
+bindsym $mod+shift+o		workspace Work_7
+bindsym $mod+shift+p		workspace Work_8
+
+bindsym $mod+n				workspace Note
+bindsym $mod+m				workspace Music
+bindsym $mod+comma			workspace Youtube
+bindsym $mod+period			workspace Firefox
+
+bindsym $mod+shift+n		workspace Down_1
+bindsym $mod+shift+m		workspace Down_2
+bindsym $mod+shift+comma	workspace Down_3
+bindsym $mod+shift+period	workspace Down_4
+bindsym $mod+slash			workspace Down_5
+bindsym $mod+shift+slash	workspace Down_6
+
+bindsym $mod+0				workspace Up_1
+bindsym $mod+9				workspace Up_2
+bindsym $mod+8				workspace Up_3
+bindsym $mod+7				workspace Up_4
+bindsym $mod+6				workspace Up_5
+bindsym $mod+shift+0		workspace Up_6
+bindsym $mod+shift+9		workspace Up_7
+bindsym $mod+shift+8		workspace Up_8
+bindsym $mod+shift+7		workspace Up_9
+bindsym $mod+shift+6		workspace Up_10
+
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+r mode "resize"
+
+
+
+
+
+
+
+
+
+
+
+
+
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+
+#? bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+# A more modern dmenu replacement is rofi:
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# There also is i3-dmenu-desktop which only displays applications shipping a
+# .desktop file. It is a wrapper around dmenu, so you need that installed.
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+#? semicolon
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+#? set $ws1 "1"
+#? bindsym $mod+0 workspace $ws10
+#? bindsym $mod+Shift+0 move container to workspace $ws10
+#? End -----------------------------------------------------------------------------------------------------------------------
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+#? -------------------------------------------------------------------------------------------
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+hide_edge_borders both
+#? -------------------------------------------------------------------------------------------
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        #? status_command i3status
+
+		#? -------------------------------------------------------------------------------------------
+		colors {
+				background $bg-color
+					separator #757575
+				#                  border             background         text
+				focused_workspace  $bg-color          $bg-color          $text-color
+				inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+				urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+			}
+		#? -------------------------------------------------------------------------------------------
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
