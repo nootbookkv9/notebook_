@@ -36,11 +36,13 @@ $ git clone https://gitlab.com/cameronnemo/brillo.git
 $ cd brillo/
 $ make
 $ sudo make install.setgid
-$ brillo		# show screen brightness
-$ sudo brillo -q -A # Up screen brightness
-$ sudo brillo -q -U # Down screen brightness
+# You have to change mode
+	$ sudo chmod 777 /sys/class/backlight/acpi_video0/brightness
+$ brillo	# show screen brightness
+$ brillo -q -A # Up screen brightness
+$ brillo -q -U # Down screen brightness
 # Add shortcut key for i3WM
 	# Up/Down Screen brightness
-	bindsym $mod+equal exec brillo -q -A 10
-	bindsym $mod+minus exec brillo -q -U 10
+	bindsym $mod+shift+equal exec brillo -q -A 10
+	bindsym $mod+shift+minus exec brillo -q -U 10
 $ brillo -c -S V_	# Set min screen brightness
