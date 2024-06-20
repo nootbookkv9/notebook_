@@ -1,0 +1,46 @@
+#####################################################
+sudo apt install xbacklight
+xbackligh -dec 10
+xbackligh -inc 10
+
+#####################################################
+# Using xrandr
+$ sudo apt-get install x11-xserver-utils # install xrandr
+
+$ xrandr
+$ xrandr --listmonitors
+$ xrandr --output Screen_Neme_ --gamma Value_:Value_:Value_
+
+#####################################################
+# Using xgamma
+$ xgamma
+$ xgamma -gamma Value_
+$ xgamma -rgamma V_ -ggamma V_ -bgamma V_
+
+#####################################################
+$ ls /sys/class/backlight	# What is your screen
+
+
+#####################################################
+# Using light
+$ sudo apt install light
+$ light -L # For list device
+$ light -G # Show screen brightness
+$ light -S V_	# Set screen brightness
+$ light -A V_	# Up screen brightness
+$ light -U V_	# Down screen brightness
+
+#####################################################
+# Using brillo
+$ git clone https://gitlab.com/cameronnemo/brillo.git
+$ cd brillo/
+$ make
+$ sudo make install.setgid
+$ brillo		# show screen brightness
+$ sudo brillo -q -A # Up screen brightness
+$ sudo brillo -q -U # Down screen brightness
+# Add shortcut key for i3WM
+	# Up/Down Screen brightness
+	bindsym $mod+equal exec brillo -q -A 10
+	bindsym $mod+minus exec brillo -q -U 10
+$ brillo -c -S V_	# Set min screen brightness

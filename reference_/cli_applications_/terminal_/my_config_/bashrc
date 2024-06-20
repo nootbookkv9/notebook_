@@ -1,0 +1,13 @@
+##################################################################################
+# PiLa_Code ######################################################################
+
+alias "w"='cd ~/work_/'				# w		--> Work		Directory
+alias "n"='cd /Notebook_'			# n		--> Notebook	Directory
+alias "t"='cd ~/test_/'				# t		--> Test		Directory
+
+alias "r"='ranger'					# r		--> Ranger
+export PS1="\W \$"					# Hide hostname and username in Terminal
+
+alias "g1"='eval $(ssh-agent -s); ssh-add ~/.ssh/nabil_key_1_'	    # Github account ahmedbachir
+alias "g2"='eval $(ssh-agent -s); ssh-add ~/.ssh/nabil_key_2_'	    # Github account kv9zy7
+
