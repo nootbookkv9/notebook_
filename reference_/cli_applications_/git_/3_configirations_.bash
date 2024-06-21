@@ -16,7 +16,7 @@
 	# In Windows
 		$ git config --global core-autucrlf true
 	# In Linux
-		$ git config --global core-autucrlf input
+		$ git config --global core.autucrlf input
 
 # Default diff.tool
 	$ git config --global diff.tool vscode

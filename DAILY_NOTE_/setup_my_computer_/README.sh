@@ -10,6 +10,6 @@
 # Ranger
 # git
 # github
-# Sounc
+# Sound
 # Screen
 # Smplayer

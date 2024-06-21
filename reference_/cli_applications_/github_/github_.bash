@@ -19,6 +19,8 @@
 
   # Test Your Coniction
   	ssh -T git@github.com-"Your_Github_Account_"
+	# Repo for test
+	git clone git@github.com:testkv9/test_one_.git
   # List ssh added
   	ssh-add -l
 
