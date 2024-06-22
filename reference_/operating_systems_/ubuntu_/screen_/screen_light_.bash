@@ -25,6 +25,9 @@ $ ls /sys/class/backlight	# What is your screen
 # Using light
 $ sudo apt install light
 $ light -L # For list device
+
+$ sudo chmod +s /usr/bin/light
+
 $ light -G # Show screen brightness
 $ light -S V_	# Set screen brightness
 $ light -A V_	# Up screen brightness
