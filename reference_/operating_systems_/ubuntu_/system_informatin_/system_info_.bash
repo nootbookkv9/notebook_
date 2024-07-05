@@ -4,6 +4,7 @@
 # Neofetch
 	$ sudo apt install neofetch
 
-
+# Check Devices
+	$ sudo dmesg
 
 
