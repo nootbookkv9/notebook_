@@ -30,3 +30,12 @@ fruits = ["apple", "banana", "cherry"]
 x, y, z = fruits
 print(x, y, z)
 
+# ---------------------------------------------
+# Global Variable -----------------------------
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x) 
