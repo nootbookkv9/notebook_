@@ -1,11 +1,4 @@
 # ---------------------------------------------------------
-# Algorithm
-	Steps to solve the problem
-# Data Structure
-	A way to store data in memory in specific structure
-		Simple Structure --> Array
-
-# ---------------------------------------------------------
 # Intro to algorithm analysis
 	- All reads leads to ROME
 	- We want to know the best read to take
@@ -70,72 +63,5 @@
 		T(n) = n*(1*(1)) + 1 + lg(n) 
 		T(n) = n + 1 + lg(n)
 		T(n) = O(n)
-
-# ---------------------------------------------------------
-# Steps to study any Algorithm
-		- What problem it solves
-		- How it works
-		- Analysis			// Worst & Best Case
-		- Implementation	// Write Code
-		- Code improvement
-
-# Searching Algorithms
-## Linear Search
-	// Pseudo Code
-	for i = 0 to n
-		if current element == target
-			return index
-	return -1
-	
-	// Analysis
-	- Worst Case
-		- Search for last element
-		- O(n)
-	- Best Case
-		- Search for first element
-		- O(1)
-	
-	// Implementation in C++
-		#include <iostream>
-		int Linear_Search_(int arr[], int target, int length) {
-			for (int i = 0; i < length; i++)
-				if (arr[i] == target) return i;
-			return -1;
-		}
-		int main() {
-			int arr[] = {20,3,4,14,5,6,7,21,34};
-			int target = 14;
-			int result = Linear_Search_(arr, target, sizeof(arr)/sizeof(int));
-			std::cout << result << std::endl;
-		}
-
-## Binary Search
-	// Psuedo Code
-		got to middle
-			if middle == target
-				return index
-			if middle > target
-				search in left
-			if middle < target
-				search in right
-	// Analysis
-		Worst Case
-			- Search for first or last element
-				- O(lg(n))
-		Best Case
-			- Search for the middle element 
-				- O(1)
-	// Implementation in C++
-
-
-
-
-
-
-# Sorting Algorithms
-## Bubble Sort
-## Selection Sort
-
-
 
 
