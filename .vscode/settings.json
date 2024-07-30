@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 0,
+    "window.zoomPerWindow": true,
+    "editor.fontSize": 20,
+    "editor.minimap.sectionHeaderFontSize": 9,
+    "debug.console.fontSize": 20,
+    "terminal.integrated.fontSize": 20
+}
