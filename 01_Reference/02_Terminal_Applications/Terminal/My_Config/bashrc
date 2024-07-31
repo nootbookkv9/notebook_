@@ -1,13 +1,16 @@
 ##################################################################################
 # PiLa_Code ######################################################################
 
-alias "w"='cd ~/work_/'				# w		--> Work		Directory
-alias "n"='cd /Notebook_'			# n		--> Notebook	Directory
-alias "t"='cd ~/test_/'				# t		--> Test		Directory
+alias "n"='cd ~/01_Notebook'
+alias "w"='cd ~/02_Work/'
+alias "t"='cd ~/03_Test/'
+alias "r"='ranger'
+alias "ud"='sudo apt update; sudo apt upgrade -y'
 
-alias "r"='ranger'					# r		--> Ranger
-export PS1="\W \$"					# Hide hostname and username in Terminal
+# Hide hostname and username in Terminal
+export PS1="\W \$"
 
-alias "g1"='eval $(ssh-agent -s); ssh-add ~/.ssh/nabil_key_1_'	    # Github account ahmedbachir
-alias "g2"='eval $(ssh-agent -s); ssh-add ~/.ssh/nabil_key_2_'	    # Github account kv9zy7
+# Set Github ssh
+eval $(ssh-agent -s) >/dev/null
+ssh-add ~/.ssh/PiLaAcer >/dev/null 2>&1
 
