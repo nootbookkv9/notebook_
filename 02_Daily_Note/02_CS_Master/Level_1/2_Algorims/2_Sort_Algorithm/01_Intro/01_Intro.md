@@ -1,7 +1,3 @@
-# Searching Algorithms #######################################
-## Linear Search
-## Binary Search
-
 # Sorting Algorithms #########################################
 ## Bubble Sort
 ## Selection Sort
