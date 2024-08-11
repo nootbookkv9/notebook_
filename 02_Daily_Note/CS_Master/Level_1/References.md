@@ -1,5 +1,11 @@
-# Geeks for geeds
-# Grokking algorithms
-# The algorithm design manual
+# Web Sides ###########################################
+## Geeks for geeds
+## Grokking algorithms
+## The algorithm design manual
 
-# VisuAlgo
+## VisuAlgo
+
+# Reference ###########################################
+## Grokking Algorithms
+## The Algorithm Design Manual
+## Competitive Programming
