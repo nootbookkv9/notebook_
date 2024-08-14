@@ -1,0 +1,1 @@
+Fast data retrieval: Arrays allow for fast data retrieval because the data is stored in contiguous memory locations. This means that the data can be accessed quickly and efficiently without the need for complex data structures or algorithms.
