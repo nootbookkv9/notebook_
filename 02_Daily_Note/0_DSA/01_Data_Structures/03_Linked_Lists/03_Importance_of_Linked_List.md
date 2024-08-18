@@ -1,4 +1,0 @@
-Dynamic_Data_structure
-Ease_of_Insertion_Deletion
-Efficient_Memory_Utilization
-Implementation
