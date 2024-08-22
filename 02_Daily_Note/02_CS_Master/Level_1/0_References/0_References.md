@@ -9,3 +9,6 @@
 ## Grokking Algorithms
 ## The Algorithm Design Manual
 ## Competitive Programming
+
+# Prectice
+https://algorithm-visualizer.org/branch-and-bound/binary-search
