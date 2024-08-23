@@ -9,20 +9,6 @@
 		$ xinput set-prop 13 328 1 # Set touchpad speed
 
 
-# Touchpad Config
-sudo vim /etc/X11/xorg.conf.d/90-thuchpad.conf
-Section "InputClass"
-	Identifier "touchpad"
-	MatchIsTouchpad "on"
-	Driver "libinput"
-	Option "Tapping" "on"
-	Option "NaturalScrolling" "on"
-	Option "ScrollMethod" "twofinger"
-	Option "TappingButtonMap" "lrm"
-EndSection
-
-
-
 
 # Active Touchpad 
 	$ xinput set-prop "$(xinput list --name-only | grep -i touch)" "libinput Tapping Enabled" 1

@@ -1,15 +1,18 @@
-# Some Setting
+# Some Setting in Desktop
+
 # i3wm
-# Touchpad
 # Delete Apps
 # Update
+
 # Firefox
 # Terminal
-# Btop
 # Vim
+# AstroVim
 # Ranger
+
 # git
 # github
+
+# Touchpad
 # Sound
 # Screen
-# Smplayer

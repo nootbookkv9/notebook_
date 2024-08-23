@@ -6,11 +6,16 @@ alias "w"='cd ~/02_Work/'
 alias "t"='cd ~/03_Test/'
 alias "r"='ranger'
 alias "ud"='sudo apt update; sudo apt upgrade -y'
+alias "usb"='gio mount -d /dev/sdb'
+alias 'py'='clear; python3 ./app.py'
+alias 'js'='clear; node ./app.js'
+alias 'sus'='systemctl suspend'
+alias 'c'='c++ -o app app.cpp; clear; ./app'
 
 # Hide hostname and username in Terminal
 export PS1="\W \$"
 
 # Set Github ssh
-eval $(ssh-agent -s) >/dev/null
-ssh-add ~/.ssh/PiLaAcer >/dev/null 2>&1
+#? eval $(ssh-agent -s) >/dev/null
+#? ssh-add ~/.ssh/PiLaAcer >/dev/null 2>&1
 
