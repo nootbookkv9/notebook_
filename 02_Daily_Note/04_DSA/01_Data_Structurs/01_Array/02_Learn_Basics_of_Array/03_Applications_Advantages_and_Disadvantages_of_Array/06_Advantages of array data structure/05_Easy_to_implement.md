@@ -1,1 +1,0 @@
-Easy to implement: Arrays are easy to implement and understand, making them an ideal choice for beginners learning computer programming.Easy to implement: Arrays are easy to implement and understand, making them an ideal choice for beginners learning computer programming.

@@ -1,1 +1,0 @@
-Memory allocation issues: Allocating a large array can be problematic, particularly in systems with limited memory. If the size of the array is too large, the system may run out of memory, which can cause the program to crash.

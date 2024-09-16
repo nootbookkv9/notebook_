@@ -1,3 +1,0 @@
-// JS code
-let arr=[]
-
