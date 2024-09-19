@@ -6,5 +6,3 @@ class Node {
         this.next = null;   
     }
 }
-
-console.log("hi")

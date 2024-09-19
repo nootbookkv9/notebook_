@@ -12,8 +12,7 @@ function insertPos(head, pos, data) {
         return newNode;
     }
 
-    // Traverse the list to find the node
-    // before the insertion point
+    // Traverse the list to find the node before the insertion point
     let prev = head;
     let count = 1;
     while (count < pos - 1 && prev !== null) {

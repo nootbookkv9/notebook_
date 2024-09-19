@@ -5,8 +5,7 @@ function insertAtBeginning(head, value) {
     // Create a new node with the given value
     let newNode = new Node(value);
 
-    // Set the next pointer of the new node to the current
-    // head
+    // Set the next pointer of the new node to the current head
     newNode.next = head;
 
     // Move the head to point to the new node
