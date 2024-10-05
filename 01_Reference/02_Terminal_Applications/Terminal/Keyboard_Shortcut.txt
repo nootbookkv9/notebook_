@@ -9,8 +9,6 @@ Ctrl+Shift++
 Ctrl+Shift+-
 Ctrl+0
 
-Ctrl+Shift+n
-
 ___Text____________________
 Ctrl+a      # Jump Start
 Ctrl+e      # Jump End
@@ -29,4 +27,4 @@ ___________________________
 Ctrl+p      # Back Command
 Ctrl+n      # Next Command
 
-20 Shortcut
+19 Shortcut
