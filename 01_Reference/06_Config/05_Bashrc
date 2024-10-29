@@ -16,8 +16,10 @@ alias 'gs'='git status'
 alias 'ga'='git add .'
 alias 'gl'='git log --oneline'
 alias 'gc'='git commit -m'
-alias 'gca'='git commit -m "Some Updates"'
 alias 'gp'='git push origin main'
+
+alias 'gca'='git commit -m "Some Updates"'
+alias 'gauto'='git add .; git commit -m "Some Updates"; git push origin main; clear'
 
 # Hide hostname and username in Terminal
 export PS1="\W \$"
