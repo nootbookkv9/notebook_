@@ -1,4 +1,9 @@
 # More
+	# install deb packeges
+		$ sudo dpkg -i "Packege Name"
+	# fix install problems
+		$ sudo apt install --fix-broken 
+
 	# List Disks
 		$ lsblk
 	# Mount USB Flash Drive
